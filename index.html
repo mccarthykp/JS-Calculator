@@ -4,46 +4,54 @@
     <title>JS Calculator</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/second.css">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <div class="switch_box">
+      <button class="switch_1">Light</button>
+      <button class="switch_2">Dark</button>
+      <button class="switch_3">Classic</button>
+    </div>
+
     <div id="calculator" class="calculator noselect">
         
-        <div type="text" id="output" class="output" value="0" disabled>0</div>
+        <div type="text" id="output" class="output" value="0" disabled></div>
         
+        <input id="screen" class="screen" type="text" name="screen" value="0" placeholder="0" disabled="true">
+
         <div class="calculator-btns">
             
-            <button type="button" class="btn btn-ops" value="/">&div;</button>
-            <button type="button" class="btn btn-ops" value="*">&times;</button>
-            <button type="button" class="btn btn-ops" value="-">&minus;</button>
-            <button type="button" class="btn btn-ops" value="+">&plus;</button>
+            <button id="divide" onclick="numbers('/')" class="btn btn-ops" value="/">/</button>
+            <button id="multiply" onclick="numbers('*')" class="btn btn-ops" value="*">x</button>
+            <button id="subtract" onclick="numbers('-')" class="btn btn-ops" value="-">-</button>
+            <button id="add" onclick="numbers('+')" class="btn btn-ops" value="+">+</button>
         
-            <button type="button" class="btn btn-nums" value="7">7</button>
-            <button type="button" class="btn btn-nums" value="8">8</button>
-            <button type="button" class="btn btn-nums" value="9">9</button>
+            <button id="7" onclick="numbers(7)" class="btn btn-nums" value="7">7</button>
+            <button id="8" onclick="numbers(8)" class="btn btn-nums" value="8">8</button>
+            <button id="9" onclick="numbers(9)" class="btn btn-nums" value="9">9</button>
         
-            <button type="button" class="btn btn-nums" value="4">4</button>
-            <button type="button" class="btn btn-nums" value="5">5</button>
-            <button type="button" class="btn btn-nums" value="6">6</button>
-            <button type="button" class="btn btn-equals" value="=">=</button>
+            <button id="4" onclick="numbers(4)" class="btn btn-nums" value="4">4</button>
+            <button id="5" onclick="numbers(5)" class="btn btn-nums" value="5">5</button>
+            <button id="6" onclick="numbers(6)" class="btn btn-nums" value="6">6</button>
+            <button id="equals" onclick="numbers('=')" class="btn btn-equals" value="=">=</button>
         
-            <button type="button" class="btn btn-nums" value="1">1</button>
-            <button type="button" class="btn btn-nums" value="2">2</button>
-            <button type="button" class="btn btn-nums" value="3">3</button>
+            <button id="1" onclick="numbers(1)" class="btn btn-nums" value="1">1</button>
+            <button id="2" onclick="numbers(2)" class="btn btn-nums" value="2">2</button>
+            <button id="3" onclick="numbers(3)" class="btn btn-nums" value="3">3</button>
          
-            <button type="button" class="btn btn-nums btn-zero" value="0">0</button>
-            <button type="button" class="btn btn-nums" value=".">.</button>
-            <button type="button" class="btn btn-ac" value="all-clear">AC</button>
+            <button id="0" onclick="numbers(0)" class="btn btn-nums btn-zero" value="0">0</button>
+            <button id="dot" onclick="dots('.')" class="btn btn-nums" value=".">.</button>
+            <button id="ac" onclick="deleted(ac)" class="btn btn-ac" value="ac">AC</button>
         
         </div>
         
     </div>
  
     <!-- JS -->
-    <script src="/JS/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

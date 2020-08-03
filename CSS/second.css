@@ -1,7 +1,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: rgb(245, 245, 245);
   }
   
   *, *::before, *::after {
@@ -23,8 +23,7 @@ body {
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
 .switch_box {
@@ -37,6 +36,7 @@ body {
     background-color: rgb(245, 245, 245);
     border: none;
     border-radius: 15px;
+    box-shadow: 8px 8px 8px rgb(195, 195, 195), 0 0 8px 8px #fff;
     padding: 20px 40px;
 }
 
@@ -44,6 +44,7 @@ body {
     background-color: #000;
     border: none;
     border-radius: 15px;
+    box-shadow: 8px 8px 8px rgb(195, 195, 195), 0 0 8px 8px #fff;
     color: #fff;
     padding: 20px 40px;
 }
@@ -52,15 +53,18 @@ body {
     background-color: rgb(100, 100, 100);
     border: none;
     border-radius: 15px;
+    box-shadow: 8px 8px 8px rgb(195, 195, 195), 0 0 8px 8px #fff;
     color: #fff;
     padding: 20px 40px;
 }
 
 .switch_1:hover {
+    box-shadow: 8px 8px 8px #fff, 0 0 8px 8px rgb(195, 195, 195);
     cursor: pointer;
 }
 
 .switch_2:hover {
+    box-shadow: 8px 8px 8px rgb(14, 14, 14), 0 0 8px 8px rgb(14, 14, 14);
     cursor: pointer;
 }
 
@@ -69,14 +73,14 @@ body {
 }
 
 .calculator {
-    background-color: black;
+    background-color: rgb(245, 245, 245);
     display: inline-block;
     position: absolute;
+    box-shadow: 8px 8px 8px rgb(195, 195, 195), 0 0 8px 8px #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    border: 1px solid;
     border-radius: 40px;
 }
 
@@ -85,12 +89,13 @@ body {
     width: 400px;
     margin: 50px;
     padding-right: 20px;
-    font-size: 5rem;
+    font-size: 4.5rem;
     height: 82.5px;
+    box-shadow: inset 6px 6px 5px rgb(195, 195, 195), inset 0px 0px 10px 8px #fff;
     border: 3px solid;
     border-radius: 25px;
     border-color: transparent;
-    color: rgb(184, 184, 184);
+    /* color: #000; */
     text-align: right;
     line-height: 75px;
     font-family: 'Source Code Pro', monospace;
@@ -104,46 +109,46 @@ body {
 }
 
 .btn {
-    background-color: rgb(29, 29, 29);
-    color: #fff;
+    background-color: rgb(245, 245, 245);
+    color: #000;
     border: 1px solid;
     border-color: transparent;
     border-radius: 20px;
     font-size: 20px;
     padding: 30px;
+    box-shadow: 6px 6px 6px rgb(195, 195, 195), 0 0 10px 6px #fff;
 }
 
 .btn:hover {
-    /* box-shadow: inset 6px 6px 6px #000; */
+    box-shadow: inset 6px 6px 6px rgb(195, 195, 195), inset 0 0 10px 6px #fff;
+    cursor: pointer;
 }
 
 .btn:focus {
     outline: none;
-    background-color: turquoise;
-    color: #000;
 }
 
 .btn-ops {
     color: rgb(184, 66, 66);
 }
 
-.btn-ops:hover {
+/* .btn-ops:hover {
     border: 1px solid;
     border-color: rgb(184, 66, 66);
-}
+} */
 
-.btn-ops:focus {
+/* .btn-ops:focus {
     background-color: rgb(184, 89, 89);
-}
+} */
 
-.btn-nums {
+/* .btn-nums {
     color: rgb(52, 155, 155);
 }
 
 .btn-nums:hover {
     border: 1px solid;
     border-color: rgb(52, 155, 155);
-}
+} */
 
 .btn-zero {
     grid-row: 5 / 6;
@@ -155,9 +160,9 @@ body {
     color: rgb(184, 66, 66);
     grid-row: 4 / 6;
     grid-column: 4 / 5;
-    /* padding-top: 135px; */
 }
 
+/* 
 .btn-equals:hover {
     border: 1px solid;
     border-color: rgb(184, 66, 66);
@@ -166,15 +171,15 @@ body {
 .btn-equals:focus {
     background-color: rgb(184, 89, 89);
 }
+*/
 
 .btn-ac {
     color: rgb(184, 66, 66);
     grid-row: 2 / 4;
     grid-column: 4 / 5;
-    /* padding-top: 135px; */
-    
 }
 
+/*
 .btn-ac:hover {
     border: 1px solid;
     border-color: rgb(184, 66, 66);
@@ -182,4 +187,5 @@ body {
 
 .btn-ac:focus {
     background-color: rgb(184, 89, 89);
-}
+} 
+*/
